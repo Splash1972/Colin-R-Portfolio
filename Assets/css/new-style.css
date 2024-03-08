@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    
+  }

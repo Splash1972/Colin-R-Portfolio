@@ -19,13 +19,13 @@ body {
   width: 250px;
   margin: 0 .5%;
   font-size: 200%;
-  color: #fff;
-  background-color: #2a607c;
-  /* border: 1px solid #13293d; */
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #13293d;
 }
 
 .header button:hover {
-  background-color: #50a3a7;
+  background-color: #07006d;
   color: #fff;
 }
 
@@ -44,13 +44,14 @@ h2 {
   flex-wrap: wrap;
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #2a607c;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .header h1 {
   display: inline-block;
   font-size: 38px;
+  padding: 25px;
 }
 
 .header div {
@@ -81,13 +82,13 @@ p {
 
 aside {
   flex: 1;
-  background-color: #b9c6ae;
+  background-color: #ffffff;
   padding: 20px;
 }
 
 section {
   flex: 3;
-  background-color: #b9c6ae;
+  background-color: #ffffff;
   padding: 20px;
 }
 
