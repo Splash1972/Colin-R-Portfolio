@@ -7,16 +7,16 @@ body {
   margin: 0;
 }
 /* header */
-header {
+/* header {
   padding: 10px;
   text-align: center;
   background: #5394d2;
   color: #fff;
-}
-
-/* h1 {
-  text-align: left;
 } */
+
+h2 {
+  text-align: right;
+}
 
 .header {
   padding: 20px;
@@ -73,7 +73,7 @@ main {
   flex-wrap: wrap;
 }
 
-.sample-img {
+.image1 {
   background-color: #fff;
   width: 100%;
   padding: 20px;
@@ -81,6 +81,13 @@ main {
   border: 1px solid black;
 }
 
+.image2 {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  border: 1px solid black;
+}
 
 .footer {
   padding: 20px;
@@ -89,9 +96,10 @@ main {
   color: #ffffff;
 }
 
-footer h1 {
+.footer h1 {
   display: inline-block;
-  font-size: 48px;
+  text-align: center;
+  font-size: 38px;
 }
 
 .footer div {
@@ -104,30 +112,20 @@ footer h1 {
 
 .footer div ul {
   list-style-type: none;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .footer div ul li {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  /* Use flex-direction to stack the navbar, sidebar, and body */
-  main,
-  nav {
+  /* Stack the navbar, sidebar, and body */
+  main
+  {
     flex-direction: column;
   }
-  /* Make the sidebar stack below the body */
-  aside {
-    order: 2;
-  }
-  /* Change the header background */
-  header {
-    background: #772014;
-  }
-  /* Change the navbar and footer background */
-  nav,
-  footer {
-    background-color: #bb8588;
-  }
+  
 }
