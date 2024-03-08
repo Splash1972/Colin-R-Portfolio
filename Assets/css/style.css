@@ -14,6 +14,33 @@ body {
   color: #fff;
 } */
 
+.header nav {
+  display: flex;
+  justify-content: right;
+  float: right;
+  padding: 25px;
+  /* margin-top: 5%; */
+}
+
+.header button {
+  width: 250px;
+  margin: 0 .5%;
+  font-size: 200%;
+  color: #fff;
+  background-color: #2a607c;
+  /* border: 1px solid #13293d; */
+}
+
+.header button:hover {
+  background-color: #50a3a7;
+  color: #fff;
+}
+
+.header button:active {
+  font-size: 180%;
+  box-shadow: 0 0 10px #000 inset;
+}
+
 h2 {
   text-align: right;
 }
@@ -103,17 +130,14 @@ main {
 }
 
 .footer div {
-  padding-top: 15px;
   margin-right: 20px;
-  float: right;
+  float: left;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
 }
 
 .footer div ul {
   list-style-type: none;
-  text-align: center;
-  padding-top: 15px;
 }
 
 .footer div ul li {
@@ -122,7 +146,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  /* Stack the navbar, sidebar, and body */
+  /* Stack the sidebar and body */
   main
   {
     flex-direction: column;
