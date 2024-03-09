@@ -5,96 +5,72 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-}
-
-.header nav {
   display: flex;
-  justify-content: right;
-  float: right;
-  padding: 25px;
-  /* margin-top: 5%; */
+  flex-direction: column;
+  line-height: 1.5;
 }
-
-.header button {
-  width: 250px;
-  margin: 0 .5%;
-  font-size: 200%;
-  color: #000000;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
   background-color: #ffffff;
-  border: 1px solid #13293d;
+  color: #000000;
+  /* margin-bottom: 30px; */
 }
 
-.header button:hover {
-  background-color: #07006d;
-  color: #fff;
-}
-
-.header button:active {
-  font-size: 180%;
-  box-shadow: 0 0 10px #000 inset;
+h1 {
+  font-size: 200%;
 }
 
 h2 {
-  text-align: right;
-  font-size: 38px;
+  font-size: 205%;
 }
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: #ffffff;
+h3 {
+  font-size: 200%;
+}
+
+/* Added symbols before and after the nav links */
+nav li::before,
+nav li::after {
+  content: '\2022';
   color: #000000;
+  padding: 1%;
+  font-family: cursive;
 }
 
-.header h1 {
-  display: inline-block;
-  font-size: 38px;
-  padding: 25px;
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
 }
 
-.header div {
-  padding-top: 20px;
-  margin-right: 20px;
-  float: right;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-}
-
-.header div ul {
-  list-style-type: none;
-}
-
-.header div ul li {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-a {
-  color: #ffffff;
+nav a {
+  color: #000000;
+  font-weight: bold;
   text-decoration: none;
 }
 
-p {
-  font-size: 16px;
+nav a:hover {
+  color: #014caf;
 }
 
-aside {
-  flex: 1;
-  background-color: #ffffff;
-  padding: 20px;
+
+
+/* Added the rest of the header text */
+h1::after {
+  font-family: Impact;
+  content: 'Portfolio';
+  color: #8ac4ff;
+  margin-left: 5px;
 }
 
-section {
-  flex: 3;
-  background-color: #ffffff;
-  padding: 20px;
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
+h2::after {
+  font-family: Impact;
+  content: 'Here:';
+  color: #8ac4ff;
+  margin-left: 5px;
 }
 
 .mypic {
@@ -104,68 +80,89 @@ main {
   background-image: url("../images/IMG_3350.JPG");
   background-size: cover;
   background-position: top;
+  margin-bottom: 20px;
 }
 
-/* Bottom left text */
-.text-block {
-  position: absolute;
-  top: 20%;
-  left: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.image1 {
-  background-color: #fff;
-  width: 100%;
-  padding: 20px;
-  height: 200px;
-  border: 1px solid black;
-}
-
-.image2 {
-  background-color: #fff;
-  width: 100%;
-  padding: 20px;
-  height: 200px;
-  border: 1px solid black;
-}
-
-.footer {
-  padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
   background-color: #2a607c;
   color: #ffffff;
 }
 
-.footer h1 {
-  display: inline-block;
+footer nav {
+  width: 400px;
+}
+
+.section {
+   display: flex;
+
+}
+
+.left { 
+  flex: 30%;
   text-align: center;
-  font-size: 38px;
 }
 
-.footer div {
-  margin-right: 20px;
-  float: left;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+.right {
+  flex: 70%;
 }
 
-.footer div ul {
-  list-style-type: none;
+.image {
+  opacity: 1;
 }
 
-.footer div ul li {
-  display: inline-block;
-  margin-left: 20px;
+.image2 {
+  opacity: 1;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.work-container :hover .image {
+  opacity: 0.3;
+}
+
+.work-container :hover .image2 {
+  opacity: 0.3;
+}
+
+.work-container .row1 {
+  display: flex;
+}
+
+.work-container .row1 img {
+  width: 100%;
+  padding: 5px;
+}
+
+.work-container .row2 {
+  display: flex;
+}
+
+.work-container .row2 img { 
+  width: 50%;
+  padding: 5px;
+}
+
+.work-container .row3 {
+  display: flex;
+  /* gap: 30px; */
+}
+
+.work-container .row3 img {
+  width: 50%;
+  padding: 5px;
 }
 
 @media screen and (max-width: 768px) {
   /* Stack the sidebar and body */
-  aside
-  {
+  header, main, footer {
     flex-direction: column;
   }
   
