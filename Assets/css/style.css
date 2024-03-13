@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   line-height: 1.5;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -16,7 +17,6 @@ header {
   padding: 1%;
   background-color: #ffffff;
   color: #000000;
-  /* margin-bottom: 30px; */
 }
 
 h1 {
@@ -44,6 +44,7 @@ nav li::after {
   font-family: cursive;
 }
 
+/* header nav */
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -75,6 +76,7 @@ h2::after {
   margin-left: 5px;
 }
 
+/* my picture under the header */
 .mypic {
   background-color: #fff;
   width: 100%;
@@ -85,6 +87,7 @@ h2::after {
   margin-bottom: 20px;
 }
 
+/* work pictures */
 .bachpic {
   background-color: #fff;
   width: 100%;
@@ -92,7 +95,27 @@ h2::after {
   background-image: url("../images/Bachlorette.jpg");
   background-position-y: 75%;
   opacity: 1;
+  border-radius: 5px;
 }
+
+h4 {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
 
 .bachpic:hover {
   opacity: 0.5;
@@ -103,8 +126,9 @@ h2::after {
   width: 100%;
   height: 200px;
   background-image: url("../images/BBW.jpg");
-  background-position-y: top;
+  background-position-y: 20%;
   opacity: 1;
+  border-radius: 5px;
 }
 
 .bbwpic:hover {
@@ -116,8 +140,11 @@ h2::after {
   width: 100%;
   height: 200px;
   background-image: url("../images/IMG_8006.jpeg");
-  background-position-y: top;
+  background-position-y: 20%;
+  background-size: 100%;
+  background-repeat: no-repeat;
   opacity: 1;
+  border-radius: 5px;
 }
 
 .studiopic:hover {
@@ -131,6 +158,7 @@ h2::after {
   background-image: url("../images/note.jpg");
   background-position-y: center;
   opacity: 1;
+  border-radius: 5px;
 }
 
 .notepic:hover {
@@ -143,7 +171,11 @@ h2::after {
   height: 200px;
   background-image: url("../images/Flam\ Swiss\ Army\ Trip.jpg");
   background-position-y: center;
+  background-position-y: 20%;
+  background-size: 100%;
+  background-repeat: no-repeat;
   opacity: 1;
+  border-radius: 5px;
 }
 
 .flampic:hover {
@@ -180,8 +212,7 @@ footer nav {
   flex: 70%;
 }
 
-
-
+/* my container for clickable pics */
 .work-container {
   display: flex;
   flex-direction: column;
@@ -200,6 +231,7 @@ footer nav {
 .work-container .row1 {
   display: flex;
   gap: 5px;
+  margin-bottom: 3px;
 }
 
 .work-container .row1 img {
@@ -210,6 +242,7 @@ footer nav {
 .work-container .row2 {
   display: flex;
   gap: 5px;
+  margin-bottom: 3px;
 }
 
 .work-container .row2 img { 
