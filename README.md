@@ -7,3 +7,7 @@ I tried using the project from week one, and reverse engineering the code to my 
 At this point, I am just going through the week two classes to see what bits of code I want to try.  I've scheduled a tutoring session to help with some of the layout issues I seem to be having.
 
 
+After countless tries, I have finally gotten to a place where I think I'm ready to submit for feedback.  I'm sure the flow will come to me as I keep doing these projects, but for now it's a struggle, but satisfying.
+
+
+
